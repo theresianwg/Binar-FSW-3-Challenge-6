@@ -1,0 +1,374 @@
+:root {
+  --first-color: rgba(241, 243, 255, 1);
+  --second-color: rgba(13, 40, 166, 1);
+  --third-color: #e5e5e5;
+  --fourth-color: #5cb85f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--first-color);
+}
+
+a {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color : black;
+}
+
+p {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h2 {
+  font-family: 'Helvetica';
+  font-style: normal;
+}
+
+.pxc-7 {
+  padding: 1vh 10vw 1vh 10vw;
+}
+
+.btn {
+  background-color: var(--fourth-color);
+  color: white;
+  width: fit-content;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.register {
+width: 57px;
+height: 20px;
+padding-left: 10px;
+color: #FFFFFF;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-size: 14px;
+line-height: 20px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.navbar-brand {
+  background-color: var(--second-color);
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  left: 136px;
+  top: 10px;
+}
+
+.navbar-brand-2 {
+  position: absolute;
+  font-size: 25px;
+  width: 55px;
+  height: 30px;
+  left: 136px;
+  top: 10px;
+}
+
+.navbar-brand-last {
+  background-color: var(--second-color);
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  left: 2px;
+  top: 36px;
+}
+
+#navbar-content {
+  width: 30vw;
+}
+
+article {
+  height: 100vh;
+}
+
+#home {
+  background-color: var(--first-color);
+  padding-left: 10vw;
+  gap: 5vw;
+}
+
+.row {
+  margin: 0;
+}
+
+.col {
+  margin: 0;
+  padding: 0;
+}
+
+.big-img {
+  width: 50vw;
+  height: fit-content;
+}
+
+.medium-img {
+  width: 20vw;
+  height: fit-content;
+}
+
+#our-service {
+  gap: 5vw;
+}
+
+#why-us .card:hover {
+  background-color: var(--fourth-color);
+  color: white;
+  box-shadow: 0 5px 10px var(--fourth-color);
+}
+
+ul {
+  list-style-image: url(../../public/img/check.svg);
+}
+
+
+li {
+  margin-bottom: 1vh;
+}
+
+.nav-link {
+  color: black;
+}
+
+#testimonial {
+  height: fit-content;
+}
+
+#testimonial-content {
+  padding: 20vh 0 10vh 0;
+}
+
+.icon-card {
+  height: 5vh;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card-testi {
+  background-color: var(--first-color);
+  border-radius: 20px;
+  border-color: transparent;
+  gap: 3vw;
+  width: 45vw;
+  flex-direction: row;
+}
+
+.testi-photo {
+  width: 10vw;
+  height: fit-content;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.testi-rate {
+  width: 10vw;
+  height: fit-content;
+}
+
+.testi-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50%;
+}
+
+.testi-btn:hover {
+  background-color: var(--fourth-color);
+  color: white;
+}
+
+.banner {
+  background-color: var(--second-color);
+  color: white;
+  padding: 10vh 15vw 10vh 15vw;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+#faq {
+  padding: 20vh 10vw 20vh 10vw;
+  height: fit-content;
+}
+
+.faq-accordion {
+  margin-left: 10vw;
+}
+
+.btn-dropdown {
+  background-color: white;
+  color: black;
+}
+
+.btn-dropdown:hover {
+  background-color: var(--first-color);
+  color: black;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn-select {
+  background-color: transparent;
+  width: 17vw;
+  color: grey;
+  border: grey solid 1px;
+}
+
+#footer {
+  padding: 10vh 10vw 10vh 10vw;
+}
+
+#search{
+  position: relative;
+  top: -55px;
+  box-shadow: 0px 0px 5px grey;
+  background-color: white;
+}
+
+#search .btn:not(:last-child){
+  background-color: transparent;
+  color: gray;
+  width: 17vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search input{
+  background-color: transparent;
+  color: gray;
+  width: 17vw;
+  display: flex;
+  text-align: start;
+}
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.icon-search{
+  width: 20px;
+  height: fit-content;
+  margin-right: 10px;
+}
+
+#cars-container{
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.car-item{
+  height: 100vh;
+}
+
+.car-item img{
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.car-item .icon{
+  width: 20px;
+  height: fit-content;
+  margin-right: 10px;
+}
+
+.car-item button{
+  width: 100%;
+}
+
+.no-data{
+  position: relative;
+  left:50vw;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    height: fit-content;
+  }
+
+  #home {
+    height: 100vh;
+  }
+
+  .home-content {
+    padding-top: 10vh;
+    padding-right: 5vw;
+  }
+
+  article {
+    padding-top: 10vh;
+  }
+
+  .pxc-7:not(nav) {
+    padding: 10vh 5vw 5vh 5vw;
+  }
+
+  .card-testi {
+    background-color: var(--first-color);
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80vw;
+    flex-direction: column;
+  }
+  .card-testi .d-flex {
+    align-items: center;
+  }
+  .testi-rate {
+    width: 30vw;
+    height: fit-content;
+  }
+
+  .faq-accordion {
+    margin: 0;
+  }
+}
